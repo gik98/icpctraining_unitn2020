@@ -1,0 +1,19 @@
+%\renewcommand*{\EdgeColor}{NordBlue}
+%\renewcommand*{\VertexLineColor}{NordDarkBlack}
+\begin{tikzpicture}[scale=0.8,transform shape]
+    %\GraphInit[vstyle=Welsh]
+    %\SetVertexNoLabel
+    \SetGraphUnit{2}
+    \Vertex[Math,L=\lbrace 4 \rbrace]{4}
+    \EA[Math,L=\lbrace 5 \rbrace](4){5}
+    \WE[Math,L=\lbrace 3 \rbrace](4){3}
+    \SOWE[Math,L=\lbrace 1 \rbrace](4){1}
+    \SOEA[Math,L=\lbrace 2 \rbrace](4){2}
+    \Edge[style={thick,->}](2)(4)
+    \Edge[style={thick,->}](5)(4)
+    \Edge[style={thick,->}](3)(4)
+    \Edge[style={thick,->}](1)(4)
+    %\AddVertexColor{NordOrange}{1, 2, 3, 4, 5}
+    %\AddVertexColor{NordBrightBlack}{1, 2, 3, 4, 5, 6}
+    \Loop[dist=2cm,dir=NO,style={thick,->}](4)
+\end{tikzpicture}
